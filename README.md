@@ -189,7 +189,7 @@ UNION SELECT 'Orders',    COUNT(*) FROM tbl_order;
 
 | Name | Role |
 |---|---|
-| Matthew Malto | Node 1 · Project Lead |
-| Ella Tizon | Node 2 |
-| Migol Ablay | Node 3 |
-| Kim Gregorio | Node 4 |
+| Matthew Malto - Project Lead | Raphael Tizon |  Node 1 
+| Ella Lumawag | Kimberly Isip |Node 2 |
+| Lorenzo Discutido | Derick Herrera | Node 3 |
+| John Carlo Ablay | Michael Gregorio | Node 4 |
