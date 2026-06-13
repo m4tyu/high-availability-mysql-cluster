@@ -183,13 +183,11 @@ UNION SELECT 'Orders',    COUNT(*) FROM tbl_order;
 | Duplicate ID errors | Verify `auto_increment_increment = 4` and offsets are unique per node |
 | Replication breaks mid-ring | Check that the offline node's Tailscale IP is reachable before restarting replica |
 
----
 
 ## Team
-
 | Name | Role |
 |---|---|
-| Matthew Malto - Project Lead | Raphael Tizon |  Node 1 
+| Matthew Malto - Project Lead | Raphael Tizon |  Node 1 |
 | Ella Lumawag | Kimberly Isip |Node 2 |
 | Lorenzo Discutido | Derick Herrera | Node 3 |
 | John Carlo Ablay | Michael Gregorio | Node 4 |
