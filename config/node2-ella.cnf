@@ -1,0 +1,18 @@
+# Node 2 — Ella (100.113.126.37)
+# /etc/mysql/mysql.conf.d/mysqld.cnf
+
+[mysqld]
+bind-address            = 0.0.0.0
+server-id               = 2
+log_bin                 = /var/log/mysql/mysql-bin.log
+log_slave_updates       = 1
+binlog_do_db            = online_store
+slave_skip_errors       = 1062
+max_allowed_packet      = 64M
+
+# Conflict prevention for 4-node circular ring
+auto_increment_increment = 4
+auto_increment_offset    = 2
+
+# Replication source: Matt (Node 1)
+# SOURCE_HOST = 100.65.253.91

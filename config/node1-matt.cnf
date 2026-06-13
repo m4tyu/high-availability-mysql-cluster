@@ -1,0 +1,18 @@
+# Node 1 — Matt (100.65.253.91)
+# /etc/mysql/mysql.conf.d/mysqld.cnf
+
+[mysqld]
+bind-address            = 0.0.0.0
+server-id               = 1
+log_bin                 = /var/log/mysql/mysql-bin.log
+log_slave_updates       = 1
+binlog_do_db            = online_store
+slave_skip_errors       = 1062
+max_allowed_packet      = 64M
+
+# Conflict prevention for 4-node circular ring
+auto_increment_increment = 4
+auto_increment_offset    = 1
+
+# Replication source: Ablay (Node 4)
+# SOURCE_HOST = 100.123.175.41
